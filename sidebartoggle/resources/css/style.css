@@ -1,0 +1,60 @@
+/**
+ * Sidebar Toggle plugin for Craft CMS
+ *
+ * Sidebar Toggle CSS
+ *
+ * @author    Trevor Davis
+ * @copyright Copyright (c) 2018 Trevor Davis
+ * @link      https://www.viget.com/
+ * @package   SidebarToggle
+ * @since     1.0.0
+ */
+
+.sidebar-toggle-button {
+	display: none;
+}
+
+@media screen and (min-width: 1214px) {
+	.sidebar-toggle-main-expanded {
+		width: 100% !important;
+	}
+
+	.sidebar-toggle-sidebar-hidden {
+		left: calc(100% + 24px) !important;
+	}
+
+	.sidebar-toggle-button {
+		border-bottom-right-radius: 0;
+		border-top-right-radius: 0;
+		display: block;
+		position: absolute;
+		right: calc(33.3333% + 6px);
+		top: 11px;
+	}
+
+	.sidebar-toggle-button.sidebar-toggle-hidden {
+		right: 6px;
+	}
+
+	.sidebar-toggle-button .alt {
+		color: transparent;
+		display: block;
+		font-size: 0;
+		line-height: 0;
+		text-shadow: none;
+	}
+
+	.sidebar-toggle-button .icon::before {
+		content: '▼';
+		display: block;
+		transform: rotate(-90deg);
+	}
+
+	.sidebar-toggle-button.sidebar-toggle-hidden .icon::before {
+		transform: rotate(90deg);
+	}
+
+	.grid .item #fields #tabs {
+		padding-right: 50px;
+	}
+}
