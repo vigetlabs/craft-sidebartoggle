@@ -22,7 +22,7 @@ class SidebarTogglePlugin extends BasePlugin
     {
         parent::init();
 
-        if (craft()->request->isCpRequest()) {
+        if (craft()->request->isCpRequest() && !craft()->request->isAjaxRequest()) {
             craft()->templates->includeJsResource('sidebartoggle/js/script.js');
             craft()->templates->includeCssResource('sidebartoggle/css/style.css');
         }
@@ -65,7 +65,7 @@ class SidebarTogglePlugin extends BasePlugin
      */
     public function getVersion()
     {
-        return '1.0.0';
+        return '1.0.1';
     }
 
     /**
