@@ -4,12 +4,21 @@ Add ability to toggle the sidebar on element edit screens
 
 ![Screenshot](resources/sidebar-toggle.gif)
 
+## Requirements
+
+This plugin requires Craft CMS 3.0.0-beta.23 or later.
+
 ## Installation
 
-To install Sidebar Toggle, follow these steps:
+To install the plugin, follow these instructions.
 
-1. Download & unzip the file and place the `sidebartoggle` directory into your `craft/plugins` directory
-1. Install plugin in the Craft Control Panel under Settings > Plugins
-1. The plugin folder should be named `sidebartoggle` for Craft to see it.  GitHub recently started appending `-master` (the branch name) to the name of the folder for zip file downloads.
 
-Sidebar Toggle works on Craft 2.4.x and Craft 2.5.x.
+1. Open your terminal and go to your Craft project:
+
+        cd /path/to/project
+
+2. Then tell Composer to load the plugin:
+
+        composer require viget/craft-sidebar-toggle
+
+3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Sidebar Toggle.

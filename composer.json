@@ -1,0 +1,40 @@
+{
+    "name": "viget/craft-sidebar-toggle",
+    "description": "Add the ability to toggle the sidebar",
+    "type": "craft-plugin",
+    "version": "2.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "sidebar toggle"
+    ],
+    "support": {
+        "docs": "https://github.com/vigetlabs/craft-sidebartoggle/blob/master/README.md",
+        "issues": "https://github.com/vigetlabs/craft-sidebartoggle/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Trevor Davis",
+            "homepage": "https://www.viget.com/"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "viget\\sidebartoggle\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Sidebar Toggle",
+        "handle": "sidebar-toggle",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/vigetlabs/craft-sidebartoggle/master/CHANGELOG.md",
+        "class": "viget\\sidebartoggle\\SidebarToggle"
+    }
+}

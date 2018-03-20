@@ -14,13 +14,13 @@
 	display: none;
 }
 
-@media screen and (min-width: 1214px) {
-	.sidebar-toggle-main-expanded {
-		width: 100% !important;
+@media screen and (min-width: 999px) {
+	.sidebar-toggle-active {
+		position: relative;
 	}
 
-	.sidebar-toggle-sidebar-hidden {
-		left: calc(100% + 24px) !important;
+	.sidebar-toggle-active #tabs {
+		padding-right: 50px;
 	}
 
 	.sidebar-toggle-button {
@@ -28,12 +28,9 @@
 		border-top-right-radius: 0;
 		display: block;
 		position: absolute;
-		right: calc(33.3333% + 6px);
-		top: 11px;
-	}
-
-	.sidebar-toggle-button.sidebar-toggle-hidden {
-		right: 6px;
+		right: 355px;
+		top: 4px;
+		z-index: 2;
 	}
 
 	.sidebar-toggle-button .alt {
@@ -45,16 +42,24 @@
 	}
 
 	.sidebar-toggle-button .icon::before {
-		content: '▼';
+		content: 'downangle';
 		display: block;
 		transform: rotate(-90deg);
 	}
 
-	.sidebar-toggle-button.sidebar-toggle-hidden .icon::before {
-		transform: rotate(90deg);
+	.sidebar-toggle-main-expanded #content-container {
+		width: 100% !important;
 	}
 
-	.grid .item #fields #tabs {
-		padding-right: 50px;
+	.sidebar-toggle-main-expanded #details {
+		display: none;
+	}
+
+	.sidebar-toggle-main-expanded .sidebar-toggle-button {
+		right:  5px;
+	}
+
+	.sidebar-toggle-main-expanded .sidebar-toggle-button .icon::before {
+		transform: rotate(90deg);
 	}
 }

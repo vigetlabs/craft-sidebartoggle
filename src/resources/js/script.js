@@ -17,16 +17,19 @@ var SidebarToggle = function() {
 SidebarToggle.prototype = {
 	init: function() {
 		this.setup();
-		this.bindEvents();
 	},
 
 	setup: function() {
-		this.$container = $('.grid[data-max-cols="3"]');
-		this.$main = this.$container.children('.item[data-colspan="2"]');
-		this.$sidebar = this.$container.children('.item.last');
-		this.$button = $('<button class="btn sidebar-toggle-button" title="Hide Sidebar"><span class="alt">Toggle Sidebar</span><span class="icon"></span></button>');
+		this.$container = $('#main-content');
 
-		this.$container.append(this.$button);
+		if (this.$container.hasClass('has-details')) {
+			this.$container.addClass('sidebar-toggle-active');
+			this.$button = $('<button class="btn sidebar-toggle-button" title="Hide Sidebar"><span class="alt">Toggle Sidebar</span><span class="icon"></span></button>');
+
+			this.$container.append(this.$button);
+
+			this.bindEvents();
+		}
 	},
 
 	bindEvents: function() {
@@ -36,9 +39,8 @@ SidebarToggle.prototype = {
 	toggle: function(e) {
 		e.preventDefault();
 
-		this.$main.toggleClass('sidebar-toggle-main-expanded');
-		this.$sidebar.toggleClass('sidebar-toggle-sidebar-hidden');
-		this.$button.toggleClass('sidebar-toggle-hidden').attr('title', function(index, val) {
+		this.$container.toggleClass('sidebar-toggle-main-expanded');
+		this.$button.attr('title', function(index, val) {
 			return (val === 'Hide Sidebar') ? 'Show Sidebar' : 'Hide Sidebar';
 		});
 	}
