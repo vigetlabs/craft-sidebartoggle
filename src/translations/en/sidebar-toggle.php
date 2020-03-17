@@ -11,7 +11,7 @@
 /**
  * @author    Trevor Davis
  * @package   SidebarToggle
- * @since     2.0.0
+ * @since     3.0.0
  */
 return [
     'Sidebar Toggle plugin loaded' => 'Sidebar Toggle plugin loaded',
