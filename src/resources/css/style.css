@@ -29,7 +29,7 @@
 		border-radius: 0;
 		display: block;
 		position: absolute;
-		right: 24px;
+		right: 388px;
 		top: 0;
 		z-index: 2;
 	}
@@ -52,9 +52,8 @@
 	}
 
 	.sidebar-toggle-button .icon::before {
-		content: 'downangle';
+		content: 'expand';
 		display: block;
-		transform: rotate(-90deg);
 	}
 
 	.sidebar-toggle-main-expanded #content-container {
@@ -77,6 +76,6 @@
 	}
 
 	.sidebar-toggle-main-expanded .sidebar-toggle-button .icon::before {
-		transform: rotate(90deg);
+		content: 'collapse';
 	}
 }
