@@ -1,5 +1,8 @@
 # Sidebar Toggle Changelog
 
+### 3.0.0 - 2018-03-20
+- Craft 3.4 compatibility; due to control panel redesign, incompatible with previous Craft versions
+
 ### 2.0.0 - 2018-03-20
 - Craft 3 compatibility
 

@@ -24,13 +24,23 @@
 	}
 
 	.sidebar-toggle-button {
-		border-bottom-right-radius: 0;
-		border-top-right-radius: 0;
+		height: 44px;
+		background-color: transparent;
+		border-radius: 0;
 		display: block;
 		position: absolute;
-		right: 355px;
-		top: 4px;
+		right: 24px;
+		top: 0;
 		z-index: 2;
+	}
+
+	.has-tabs .sidebar-toggle-button {
+		top: 40px;
+	}
+
+	.sidebar-toggle-button:focus,
+	.sidebar-toggle-button:hover {
+		background-color: transparent;
 	}
 
 	.sidebar-toggle-button .alt {
@@ -48,7 +58,14 @@
 	}
 
 	.sidebar-toggle-main-expanded #content-container {
+		flex: 0 0 100%;
+		max-width: none !important;
 		width: 100% !important;
+	}
+
+	.sidebar-toggle-main-expanded #details-container {
+		flex: 0 0 0;
+		width: 0;
 	}
 
 	.sidebar-toggle-main-expanded #details {
@@ -56,7 +73,7 @@
 	}
 
 	.sidebar-toggle-main-expanded .sidebar-toggle-button {
-		right:  5px;
+		right:  24px;
 	}
 
 	.sidebar-toggle-main-expanded .sidebar-toggle-button .icon::before {
