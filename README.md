@@ -6,7 +6,7 @@ Add ability to toggle the sidebar on element edit screens
 
 ## Requirements
 
-This plugin requires Craft CMS 3.0.0-beta.23 or later.
+This plugin requires Craft CMS 3.4.0 or later.
 
 ## Installation
 
