@@ -1,3 +1,5 @@
+<p align="center"><img src="resources/icon.png" width="100"></p>
+
 # Sidebar Toggle plugin for Craft CMS
 
 Add ability to toggle the sidebar on element edit screens
