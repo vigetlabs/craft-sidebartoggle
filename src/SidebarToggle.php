@@ -21,7 +21,7 @@ use viget\sidebartoggle\SidebarToggleBundle;
  *
  * @author    Trevor Davis
  * @package   SidebarToggle
- * @since     3.0.0
+ * @since     2.0.0
  *
  */
 class SidebarToggle extends Plugin

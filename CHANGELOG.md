@@ -1,5 +1,8 @@
 # Sidebar Toggle Changelog
 
+### 3.0.1 - 2020-03-25
+- Add logo
+
 ### 3.0.0 - 2020-03-17
 - Craft 3.4 compatibility; due to control panel redesign, incompatible with previous Craft versions
 
