@@ -43,6 +43,8 @@ SidebarToggle.prototype = {
 		this.$button.attr('title', function(index, val) {
 			return (val === 'Hide Sidebar') ? 'Show Sidebar' : 'Hide Sidebar';
 		});
+
+		$(window).trigger('resize');
 	}
 };
 
